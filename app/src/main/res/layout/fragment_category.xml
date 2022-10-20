@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.CategoryFragment">
+
+    <TextView
+        android:textStyle="bold"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Select Category"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Caption"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#53B175"
+        android:id="@+id/check_electronics"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Electronics" />
+
+    <CheckBox
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#53B175"
+        android:id="@+id/check_jewelery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jewelery" />
+
+    <CheckBox
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#53B175"
+        android:id="@+id/check_Men"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Men" />
+
+    <CheckBox
+        android:textStyle="bold"
+        android:textSize="23sp"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textColor="#53B175"
+        android:id="@+id/check_Women"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Women" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:listitem="@layout/item_view"
+    android:id="@+id/recyclerviewCategory"/>
+</LinearLayout>
